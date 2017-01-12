@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using LitJson;
 
@@ -34,16 +33,28 @@ public class WonderManager
         // Object
         JsonData jsondata = JsonMapper.ToObject(json);
 
-        Wonder wonder = new Wonder(
-            jsondata["id"].ToString(),
-            jsondata["name"].ToString(),
-            jsondata["nation"].ToString()
-            );
-            
-//             ;
+        int nWonders = jsondata.Count;
+        for (int i = 0; i < nWonders; i++)
+        {
+            Wonder wonder = new Wonder(
+            int.Parse(jsondata[i]["id"].ToString()),
+            jsondata[i]["name"].ToString(),
+            jsondata[i]["nation"].ToString());
 
-        
-        Debug.LogError(wonder);
+
+
+            int nImages = jsondata[i]["images"].Count;
+            for (int j = 0; j < nImages; j++)
+            {
+                wonder.addImage(jsondata[i]["images"][j].ToString());
+            }
+
+            wonder.setRotationX(float.Parse(jsondata[i]["rotation"][0].ToString()));
+            wonder.setRotationY(float.Parse(jsondata[i]["rotation"][1].ToString()));
+            wonder.setRotationZ(float.Parse(jsondata[i]["rotation"][2].ToString()));
+
+            mWonders.Add(wonder.getId(), wonder);
+        }
     }
 
     public Dictionary<int, Wonder> getWonders()
@@ -76,4 +87,8 @@ public class WonderManager
         return getWonder(id).getImages();
     }
 
+    public float getRotationYByWonderId(int id)
+    {
+        return getWonder(id).getRotation().y;
+    }
 }
