@@ -85,6 +85,9 @@
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\Json\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Scripts\GA_FREE_Demo00.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
     <Compile Include="Assets\Scripts\DialogPanel.cs" />
     <Compile Include="Assets\Scripts\Helpers\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Models\Wonder.cs" />
     <Compile Include="Assets\Scripts\Models\WonderManager.cs" />
     <Compile Include="Assets\Scripts\Slider.cs" />

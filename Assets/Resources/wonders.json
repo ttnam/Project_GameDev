@@ -1,0 +1,76 @@
+[
+	{
+		"id": 1,
+		"name": "Colosseum",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/colosseum/1",
+			"Recourses/wonders/colosseum/2",
+			"Recourses/wonders/colosseum/3"
+		]
+	},
+	{
+		"id": 2,
+		"name": "Eiffel",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/eiffel/1",
+			"Recourses/wonders/eiffel/2",
+			"Recourses/wonders/eiffel/3"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Pisa",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/pisa/1",
+			"Recourses/wonders/pisa/2",
+			"Recourses/wonders/pisa/3"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Pyramid",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/pyramid/1",
+			"Recourses/wonders/pyramid/2",
+			"Recourses/wonders/pyramid/3"
+		]
+	}
+	,
+	{
+		"id": 5,
+		"name": "Statue of Liberty",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/statueofliberty/1",
+			"Recourses/wonders/statueofliberty/2",
+			"Recourses/wonders/statueofliberty/3"
+		]
+	}
+	,
+	{
+		"id": 6,
+		"name": "The Terrifying One",
+		"nation": "nation",
+		"position":[0,0,0],
+		"rotation":[0,0,0],
+		"images":[
+			"Recourses/wonders/theterrifyingone/1",
+			"Recourses/wonders/theterrifyingone/2",
+			"Recourses/wonders/theterrifyingone/3"
+		]
+	}
+]
