@@ -38,4 +38,9 @@ public class SpinFree : MonoBehaviour {
 			}
 		}
 	}
+
+    public void OnPauseSpin()
+    {
+        spin = !spin;
+    }
 }
