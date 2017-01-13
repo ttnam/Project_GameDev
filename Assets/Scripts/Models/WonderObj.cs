@@ -27,6 +27,8 @@ public class WonderObj : MonoBehaviour
                 {
                     Global.CURR_WONDER = wonderId;
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
+                    Global.PREV_SCENE = Global.MAIN_SCENE;
+                    Global.CURR_SCENE = Global.DETAIL_SCENE;
                 }
             }
         }

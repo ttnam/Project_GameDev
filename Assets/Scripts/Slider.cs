@@ -13,6 +13,7 @@ public class Slider : MonoBehaviour
     void Start()
     {
         onLoadImages();
+        index = Global.CURR_WONDER - 1;
 
     }
 
@@ -30,19 +31,19 @@ public class Slider : MonoBehaviour
         {
             imagesBuffer.Add(images[i]);
         }
-        GetComponent<RawImage>().texture = (Texture)imagesBuffer[0];
+        GetComponent<RawImage>().texture = (Texture)imagesBuffer[Global.CURR_WONDER - 1];
     }
 
 
     public void onNext()
     {
-        int curr = (index + 1) >= imagesBuffer.Count ? imagesBuffer.Count - 1 : index++;
+        int curr = (index + 1) >= imagesBuffer.Count ? imagesBuffer.Count - 1 : ++index;
         GetComponent<RawImage>().texture = (Texture)imagesBuffer[curr];
         Global.CURR_WONDER = curr + 1;
     }
     public void onPrev()
     {
-        int curr = (index - 1) <= 0 ? 0 : index--;
+        int curr = (index - 1) <= 0 ? 0 : --index;
         GetComponent<RawImage>().texture = (Texture)imagesBuffer[curr];
         Global.CURR_WONDER = curr + 1;
     }

@@ -17,11 +17,14 @@ public class DialogPanel : MonoBehaviour {
     public void go()
     {
         SceneManager.LoadScene(Global.DETAIL_SCENE);
+        Global.PREV_SCENE = Global.SPLASH_SCENE;
+        Global.CURR_SCENE = Global.DETAIL_SCENE;
     }
     public void earth()
     {
         SceneManager.LoadScene(Global.MAIN_SCENE);
-
+        Global.PREV_SCENE = Global.SPLASH_SCENE;
+        Global.CURR_SCENE = Global.MAIN_SCENE;
     }
     public void contact()
     {

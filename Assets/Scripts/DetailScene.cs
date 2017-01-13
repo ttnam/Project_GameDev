@@ -38,19 +38,20 @@ public class DetailScene : MonoBehaviour
         {
             // Set GUIAnimSystemFREE.Instance.m_AutoAnimation to false in Awake() will let you control all GUI Animator elements in the scene via scripts.
             GUIAnimSystemFREE.Instance.m_AutoAnimation = false;
+          
         }
+
     }
 
     void Start()
     {
-
+        Global.isShowed = false;
         StartCoroutine(MoveInTitleGameObjects());
 
 
         GUIAnimSystemFREE.Instance.SetGraphicRaycasterEnable(m_Canvas, false);
 
         onLoadData();
-
     }
 
     // Update is called every frame, if the MonoBehaviour is enabled.
@@ -86,7 +87,7 @@ public class DetailScene : MonoBehaviour
         m_Dialog.MoveIn(GUIAnimSystemFREE.eGUIMove.SelfAndChildren);
         m_Dialog_Info.MoveIn(GUIAnimSystemFREE.eGUIMove.SelfAndChildren);
         m_DialogButtons.MoveIn(GUIAnimSystemFREE.eGUIMove.SelfAndChildren);
-
+        Global.isShowed = true;
         // Enable all scene switch buttons
         StartCoroutine(EnableAllDemoButtons());
     }
@@ -202,10 +203,16 @@ public class DetailScene : MonoBehaviour
     public void OnHome()
     {
         SceneManager.LoadScene(Global.SPLASH_SCENE);
+        Global.PREV_SCENE = Global.SPLASH_SCENE;
+        Global.CURR_SCENE = Global.SPLASH_SCENE;
+        Global.isShowed = false;
     }
     public void OnBack()
     {
-        SceneManager.LoadScene(Global.MAIN_SCENE);
+        SceneManager.LoadScene(Global.PREV_SCENE);
+        Global.CURR_SCENE = Global.PREV_SCENE;
+        Global.PREV_SCENE = Global.DETAIL_SCENE;
+        Global.isShowed = false;
     }
 
     #endregion
