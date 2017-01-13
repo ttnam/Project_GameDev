@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 /// <summary>
 /// Spin the object at a specified speed
 /// </summary>
 public class SpinFree : MonoBehaviour {
+
+
 	[Tooltip("Spin: Yes or No")]
 	public bool spin;
 	[Tooltip("Spin the parent object instead of the object this script is attached to")]
@@ -17,6 +20,10 @@ public class SpinFree : MonoBehaviour {
 	public float direction = 1f;
 	[HideInInspector]
 	public float directionChangeSpeed = 2f;
+
+
+    [SerializeField]
+    private GameObject noti;
 
 	// Update is called once per frame
 	void Update() {
@@ -42,5 +49,13 @@ public class SpinFree : MonoBehaviour {
     public void OnPauseSpin()
     {
         spin = !spin;
+        if (spin)
+        {
+            noti.GetComponent<Text>().text = "THE EARTH ROTATES ON ITS AXIS";
+        }
+        else
+        {
+            noti.GetComponent<Text>().text = "THE EARTH IS STOPPED";
+        }
     }
 }
