@@ -1,11 +1,19 @@
 [
 	{
 		"id": 1,
-		"name": "Colosseum",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"name": "BigBen",
+		"nation": "London, England, UK",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/colosseum/1",
 			"Recourses/wonders/colosseum/2",
 			"Recourses/wonders/colosseum/3"
@@ -13,61 +21,299 @@
 	},
 	{
 		"id": 2,
-		"name": "Eiffel",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"name": "Burj al-Arab",
+		"nation": "Dubai, United Arab Emirates",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/colosseum/1",
+			"Recourses/wonders/colosseum/2",
+			"Recourses/wonders/colosseum/3"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Colosseum",
+		"nation": "Regio IV Templum Pacis (Temple of Peace)",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/colosseum/1",
+			"Recourses/wonders/colosseum/2",
+			"Recourses/wonders/colosseum/3"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Notre-Dame Cathedral Basilica of Saigon",
+		"nation": "Ho Chi Minh City, Vietnam",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/colosseum/1",
+			"Recourses/wonders/colosseum/2",
+			"Recourses/wonders/colosseum/3"
+		]
+	},
+	{
+		"id": 5,
+		"name": "Eiffel Tower",
+		"nation": "7th arrondissement, Paris, France",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/eiffel/1",
 			"Recourses/wonders/eiffel/2",
 			"Recourses/wonders/eiffel/3"
 		]
 	},
 	{
-		"id": 3,
-		"name": "Pisa",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"id": 6,
+		"name": "Great Wall of China",
+		"nation": "China",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/eiffel/1",
+			"Recourses/wonders/eiffel/2",
+			"Recourses/wonders/eiffel/3"
+		]
+	},
+	{
+		"id": 7,
+		"name": "Hoan Kiem Lake",
+		"nation": "Hanoi, Vietnam",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/eiffel/1",
+			"Recourses/wonders/eiffel/2",
+			"Recourses/wonders/eiffel/3"
+		]
+	},
+	{
+		"id": 8,
+		"name": "Sydney Opera House",
+		"nation": "Bennelong Point, Sydney",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/eiffel/1",
+			"Recourses/wonders/eiffel/2",
+			"Recourses/wonders/eiffel/3"
+		]
+	},
+	{
+		"id": 9,
+		"name": "Tower of Pisa",
+		"nation": "Pisa, Italy",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/pisa/1",
 			"Recourses/wonders/pisa/2",
 			"Recourses/wonders/pisa/3"
 		]
 	},
 	{
-		"id": 4,
-		"name": "Pyramid",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"id": 10,
+		"name": "Pyramid of the Moon",
+		"nation": "Mexico",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/pyramid/1",
 			"Recourses/wonders/pyramid/2",
 			"Recourses/wonders/pyramid/3"
 		]
-	}
-	,
+	},
 	{
-		"id": 5,
-		"name": "Statue of Liberty",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"id": 11,
+		"name": "Rio de Janeiro",
+		"nation": "Brazil",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/statueofliberty/1",
 			"Recourses/wonders/statueofliberty/2",
 			"Recourses/wonders/statueofliberty/3"
 		]
-	}
-	,
+	},
 	{
-		"id": 6,
-		"name": "The Terrifying One",
-		"nation": "nation",
-		"position":[0,0,0],
-		"rotation":[0,0,0],
-		"images":[
+		"id": 12,
+		"name": "Mount Rushmore",
+		"nation": "Pennington County, South Dakota, United States",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/statueofliberty/1",
+			"Recourses/wonders/statueofliberty/2",
+			"Recourses/wonders/statueofliberty/3"
+		]
+	},
+	{
+		"id": 13,
+		"name": "Statue of Liberty",
+		"nation": "Liberty Island, Manhattan, New York City, New York, United States",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/statueofliberty/1",
+			"Recourses/wonders/statueofliberty/2",
+			"Recourses/wonders/statueofliberty/3"
+		]
+	},
+	{
+		"id": 14,
+		"name": "Taj mahal",
+		"nation": "Agra, Uttar Pradesh, India",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/statueofliberty/1",
+			"Recourses/wonders/statueofliberty/2",
+			"Recourses/wonders/statueofliberty/3"
+		]
+	},
+	{
+		"id": 15,
+		"name": "Great Sphinx of Giza",
+		"nation": "Egypt",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
+			"Recourses/wonders/theterrifyingone/1",
+			"Recourses/wonders/theterrifyingone/2",
+			"Recourses/wonders/theterrifyingone/3"
+		]
+	},
+	{
+		"id": 16,
+		"name": "Petronas Towers",
+		"nation": "Jalan Ampang, Kuala Lumpur, Malaysia",
+		"position": [
+			0,
+			0,
+			0
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"images": [
 			"Recourses/wonders/theterrifyingone/1",
 			"Recourses/wonders/theterrifyingone/2",
 			"Recourses/wonders/theterrifyingone/3"

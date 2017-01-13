@@ -2,6 +2,8 @@
 
 using UnityEngine;
 using System.Collections;
+using Assets.Scripts.Globals;
+using UnityEngine.UI;
 
 #endregion // Namespaces
 
@@ -18,14 +20,18 @@ public class DetailScene : MonoBehaviour
     public GUIAnimFREE m_Dialog_Info;
     public GUIAnimFREE m_DialogButtons;
 	
-	#endregion // Variables
-	
-	
-	#region MonoBehaviour
-	
-	// Awake is called when the script instance is being loaded.
-	// http://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
-	void Awake ()
+
+    // Data
+    [SerializeField]
+    private GameObject WonderName;
+    [SerializeField]
+    private GameObject WonderNation;
+    #endregion // Variables
+
+
+    #region MonoBehaviour
+
+    void Awake ()
 	{
 		if(enabled)
 		{
@@ -39,15 +45,18 @@ public class DetailScene : MonoBehaviour
 		
 		StartCoroutine(MoveInTitleGameObjects());
 
-		// Disable all scene switch buttons
-		// http://docs.unity3d.com/Manual/script-GraphicRaycaster.html
+		
 		GUIAnimSystemFREE.Instance.SetGraphicRaycasterEnable(m_Canvas, false);
-	}
+
+        onLoadData();
+
+    }
 	
 	// Update is called every frame, if the MonoBehaviour is enabled.
 	// http://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
 	void Update ()
 	{		
+
 	}
 	
 	#endregion // MonoBehaviour
@@ -170,7 +179,23 @@ public class DetailScene : MonoBehaviour
         m_Dialog_Info.MoveIn(GUIAnimSystemFREE.eGUIMove.SelfAndChildren);
         m_DialogButtons.MoveIn(GUIAnimSystemFREE.eGUIMove.SelfAndChildren);
 	}
-	
-	#endregion // Move Dialog/Button
-    
+
+    #endregion // Move Dialog/Button
+
+
+    #region CUSTOM
+
+    private void onLoadData()
+    {
+        int currWonder = Global.CURR_WONDER;
+        Wonder wonder = WonderManager.getInstance().getWonder(currWonder);
+        if(wonder != null)
+        {
+            WonderName.GetComponent<Text>().text = wonder.getName();
+            WonderNation.GetComponent<Text>().text = wonder.getName();
+        }
+
+    }
+
+    #endregion
 }

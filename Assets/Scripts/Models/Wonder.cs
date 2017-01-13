@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System;
 
@@ -23,8 +22,7 @@ public class Wonder
         this.mImages = new List<string>();
     }
     public Wonder(int id, string name, string nation,
-        Vector3 rotation, Vector3 position, List<string> images
-        )
+        Vector3 rotation, Vector3 position, List<string> images)
     {
         this.mId = id;
         this.mName = name;
@@ -55,7 +53,10 @@ public class Wonder
     {
         return this.mName;
     }
-
+    public string getNation()
+    {
+        return this.mNation;
+    }
     public List<string> getImages()
     {
         return this.mImages;
