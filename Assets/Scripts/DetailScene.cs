@@ -192,7 +192,7 @@ public class DetailScene : MonoBehaviour
         if(wonder != null)
         {
             WonderName.GetComponent<Text>().text = wonder.getName();
-            WonderNation.GetComponent<Text>().text = wonder.getName();
+            WonderNation.GetComponent<Text>().text = wonder.getNation();
         }
 
     }

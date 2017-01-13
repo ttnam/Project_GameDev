@@ -25,6 +25,7 @@ public class WonderObj : MonoBehaviour
             {
                 if (raycastHit.collider.transform.tag == "Wonder")
                 {
+                    Global.CURR_WONDER = wonderId;
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
                 }
             }

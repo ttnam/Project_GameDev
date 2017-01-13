@@ -64,7 +64,7 @@ public class WonderManager
 
     public Wonder getWonder(int id)
     {
-        if (id < 1 || id >= this.mWonders.Count)
+        if (id > 0 && id < this.mWonders.Count)
         {
             return this.mWonders[id];
         }

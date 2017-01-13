@@ -5,6 +5,6 @@
         public static string MAIN_SCENE = "MainScene";
         public static string DETAIL_SCENE = "DetailScene";
 
-        public static int CURR_WONDER = 0;
+        public static int CURR_WONDER = 1;
     }
 }
