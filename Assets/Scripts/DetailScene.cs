@@ -189,6 +189,7 @@ public class DetailScene : MonoBehaviour
     private void onLoadData()
     {
         int currWonder = Global.CURR_WONDER;
+        Debug.LogError("ID: " + currWonder);
         Wonder wonder = WonderManager.getInstance().getWonder(currWonder);
         if (wonder != null)
         {
