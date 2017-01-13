@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Assets.Scripts.Globals;
 
 public class Slider : MonoBehaviour
 {
@@ -35,13 +36,14 @@ public class Slider : MonoBehaviour
 
     public void onNext()
     {
-       
-        GetComponent<RawImage>().texture = (Texture)imagesBuffer[
-            (index + 1) >= imagesBuffer.Count ? imagesBuffer.Count - 1 : index++];
+        int curr = (index + 1) >= imagesBuffer.Count ? imagesBuffer.Count - 1 : index++;
+        GetComponent<RawImage>().texture = (Texture)imagesBuffer[curr];
+        Global.CURR_WONDER = curr + 1;
     }
     public void onPrev()
     {
-        GetComponent<RawImage>().texture = (Texture)imagesBuffer[
-            (index - 1) <= 0 ? 0 : index--];
+        int curr = (index - 1) <= 0 ? 0 : index--;
+        GetComponent<RawImage>().texture = (Texture)imagesBuffer[curr];
+        Global.CURR_WONDER = curr + 1;
     }
 }

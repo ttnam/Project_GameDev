@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Assets.Scripts.Globals;
 
 public class DialogPanel : MonoBehaviour {
 
@@ -15,16 +16,16 @@ public class DialogPanel : MonoBehaviour {
 	}
     public void go()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(Global.DETAIL_SCENE);
     }
-    public void option()
+    public void earth()
     {
-        SceneManager.LoadScene("OptionScene");
+        SceneManager.LoadScene(Global.MAIN_SCENE);
 
     }
     public void contact()
     {
-        Application.OpenURL("https://www.google.com");
+        Application.OpenURL("https://github.com/ttnam/Unity3D-AR");
     }
 
     public void exit()
