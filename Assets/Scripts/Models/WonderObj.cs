@@ -23,11 +23,9 @@ public class WonderObj : MonoBehaviour
             if (Physics.Raycast(ray, out raycastHit))
             {
                 string tag = raycastHit.collider.transform.tag;
-                Debug.Log(tag.Substring(0, 5));
                 if (tag.Substring(0, 6) == "Wonder")
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
-                    Debug.Log(int.Parse(tag.Substring(7, tag.Length - 1)));  
-                    Global.CURR_WONDER = int.Parse(tag.Substring(7, tag.Length - 1));
+                    Global.CURR_WONDER = int.Parse(tag.Substring(7, 2));
                     Global.PREV_SCENE = Global.MAIN_SCENE;
                     Global.CURR_SCENE = Global.DETAIL_SCENE;
                     return;
