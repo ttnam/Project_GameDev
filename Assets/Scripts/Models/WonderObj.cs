@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class WonderObj : MonoBehaviour
 {
-    [SerializeField]
-    private int wonderId;
+    //[SerializeField]
+    public int wonderId;
 
     // Use this for initialization
     void Start()
@@ -27,6 +27,7 @@ public class WonderObj : MonoBehaviour
                 {
                     Global.CURR_WONDER = wonderId;
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
+                    Debug.Log(wonderId);  
                     Global.PREV_SCENE = Global.MAIN_SCENE;
                     Global.CURR_SCENE = Global.DETAIL_SCENE;
                 }
