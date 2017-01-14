@@ -16,22 +16,22 @@ public class WonderObj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0))
         {
             RaycastHit raycastHit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out raycastHit))
             {
-                if (raycastHit.collider.transform.tag == "Wonder")
-                {
-                    Global.CURR_WONDER = wonderId;
+                string tag = raycastHit.collider.transform.tag;
+                Debug.Log(tag.Substring(0, 5));
+                if (tag.Substring(0, 6) == "Wonder")
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
-                    Debug.Log(wonderId);  
+                    Debug.Log(int.Parse(tag.Substring(7, tag.Length - 1)));  
+                    Global.CURR_WONDER = int.Parse(tag.Substring(7, tag.Length - 1));
                     Global.PREV_SCENE = Global.MAIN_SCENE;
                     Global.CURR_SCENE = Global.DETAIL_SCENE;
+                    return;
                 }
-            }
         }
     }
 }
