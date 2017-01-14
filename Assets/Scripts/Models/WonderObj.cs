@@ -26,8 +26,8 @@ public class WonderObj : MonoBehaviour
                 Debug.Log(tag.Substring(0, 5));
                 if (tag.Substring(0, 6) == "Wonder")
                     SceneManager.LoadScene(Global.DETAIL_SCENE);
-                    Debug.Log(int.Parse(tag.Substring(7, tag.Length - 1)));  
-                    Global.CURR_WONDER = int.Parse(tag.Substring(7, tag.Length - 1));
+                    Debug.Log(int.Parse(tag.Substring(7, 2)));  
+                    Global.CURR_WONDER = int.Parse(tag.Substring(7, 2));
                     Global.PREV_SCENE = Global.MAIN_SCENE;
                     Global.CURR_SCENE = Global.DETAIL_SCENE;
                     return;
