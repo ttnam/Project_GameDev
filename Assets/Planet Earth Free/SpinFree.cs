@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Assets.Scripts.Globals;
 
 /// <summary>
 /// Spin the object at a specified speed
@@ -57,5 +59,12 @@ public class SpinFree : MonoBehaviour {
         {
             noti.GetComponent<Text>().text = "THE EARTH IS STOPPED";
         }
+    }
+    public void OnHome()
+    {
+        SceneManager.LoadScene(Global.SPLASH_SCENE);
+        Global.PREV_SCENE = Global.SPLASH_SCENE;
+        Global.CURR_SCENE = Global.SPLASH_SCENE;
+        Global.isShowed = false;
     }
 }

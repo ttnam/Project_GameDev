@@ -5,6 +5,7 @@
         public static string MAIN_SCENE = "MainScene";
         public static string DETAIL_SCENE = "DetailScene";
         public static string SPLASH_SCENE = "SplashScene";
+        public static string MODEL3D_SCENE = "Woder3DSence";
 
         public static string PREV_SCENE = SPLASH_SCENE;
         public static string CURR_SCENE = SPLASH_SCENE;

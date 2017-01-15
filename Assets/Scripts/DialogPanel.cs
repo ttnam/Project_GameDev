@@ -28,7 +28,9 @@ public class DialogPanel : MonoBehaviour {
     }
     public void contact()
     {
-        Application.OpenURL("https://github.com/ttnam/Unity3D-AR");
+        SceneManager.LoadScene(Global.MODEL3D_SCENE);
+        Global.PREV_SCENE = Global.SPLASH_SCENE;
+        Global.CURR_SCENE = Global.MODEL3D_SCENE;
     }
 
     public void exit()
