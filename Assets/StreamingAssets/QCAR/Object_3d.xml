@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="stones_hires" size="50.000000 35.000000" />
+    <ImageTarget name="earth" size="50.000000 35.000000" />
+    <ImageTarget name="Petronas" size="50.000000 53.461540" />
+    <ImageTarget name="TheTerrifyingOne" size="50.000000 53.333332" />
+    <ImageTarget name="Tajmahal" size="50.000000 53.333332" />
+    <ImageTarget name="StatueofLiberty" size="50.000000 53.333332" />
+    <ImageTarget name="Rushmore" size="50.000000 53.333332" />
+    <ImageTarget name="RiodeJaneiro" size="50.000000 53.333332" />
+    <ImageTarget name="Pyramid" size="50.000000 53.333332" />
+    <ImageTarget name="Pisa" size="50.000000 53.461540" />
+    <ImageTarget name="OperaSydney" size="50.000000 53.333332" />
+    <ImageTarget name="HoanKiem" size="50.000000 53.333332" />
+    <ImageTarget name="GreatWallofChina" size="50.000000 53.299999" />
+    <ImageTarget name="Eiffel" size="50.000000 53.368912" />
+    <ImageTarget name="DucBa" size="50.000000 53.333332" />
+    <ImageTarget name="Colosseum" size="50.000000 53.461540" />
+    <ImageTarget name="Burjal-Arab" size="50.000000 53.333332" />
+    <ImageTarget name="BigBen" size="50.000000 53.333332" />
   </Tracking>
 </QCARConfig>
